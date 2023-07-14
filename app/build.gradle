@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'dev.redfox.templateandroidxml'
+    namespace 'dev.redfox.anisearchclean'
     compileSdk 33
 
     defaultConfig {
-        applicationId "dev.redfox.templateandroidxml"
+        applicationId "dev.redfox.anisearchclean"
         minSdk 27
         targetSdk 33
         versionCode 1

@@ -1,4 +1,4 @@
-package dev.redfox.templateandroidxml
+package dev.redfox.anisearchclean
 
 import org.junit.Test
 

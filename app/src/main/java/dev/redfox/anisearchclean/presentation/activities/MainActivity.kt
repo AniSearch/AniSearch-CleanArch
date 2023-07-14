@@ -1,8 +1,8 @@
-package dev.redfox.templateandroidxml
+package dev.redfox.anisearchclean.presentation.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import dev.redfox.templateandroidxml.databinding.ActivityMainBinding
+import dev.redfox.anisearchclean.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
