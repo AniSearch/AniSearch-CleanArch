@@ -13,6 +13,7 @@
     <color name="material_purple">#B15AFF</color>
     <color name="material_green">#43C685</color>
     <color name="material_orange">#FF6D63</color>
+    <color name="material_yellow">#FAFFD0</color>
     <color name="subtle_red">#D2FFC8D2</color>
     <color name="dark">#4D4D4D</color>
     <color name="grey">#727272</color>
@@ -21,6 +22,7 @@
     <color name="card_color1">#FFF1D4</color>
     <color name="card_color2">#FFDAB8</color>
     <color name="card_color3">#FFD3D3</color>
+    <color name="medium_red">#FF616B</color>
 
     <!--SnackBar Colors-->
     <color name="colorSuccess">#4caf50</color>

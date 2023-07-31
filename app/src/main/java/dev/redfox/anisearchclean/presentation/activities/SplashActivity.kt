@@ -33,14 +33,12 @@ class SplashActivity : AppCompatActivity() {
         } else if (isNetworkAvailable() == true) {
 
             Handler().postDelayed({
-                startActivity(Intent(this, IntroActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }, 2000)
 
             Toast.makeText(this, "Welcome", Toast.LENGTH_SHORT).show()
         }
-
-
         setContentView(view)
     }
 
