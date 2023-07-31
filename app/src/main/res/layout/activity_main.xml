@@ -25,15 +25,18 @@
 
     </FrameLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <me.ibrahimsn.lib.SmoothBottomBar
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="70dp"
+        app:backgroundColor="@color/material_blue"
         android:layout_alignParentBottom="true"
-        app:backgroundTint="@color/white"
-        app:itemIconTint="@color/black"
-        app:itemRippleColor="@color/material_purple"
-        app:itemTextColor="@color/black"
-        app:menu="@menu/bottom_nav_menu" />
+        app:menu="@menu/bottom_nav_menu"
+        android:elevation="12dp"
+        app:indicatorRadius="8dp"
+        app:textSize="14sp"
+        app:iconMargin="8dp"
+        app:iconSize="24dp"
+        />
 
 </RelativeLayout>

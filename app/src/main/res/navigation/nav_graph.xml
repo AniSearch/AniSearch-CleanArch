@@ -3,39 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/animeFragment">
+    app:startDestination="@+id/animeFragment">
 
     <fragment
-        android:id="@id/animeFragment"
+        android:id="@+id/animeFragment"
         android:name="dev.redfox.anisearchclean.presentation.fragments.animeFragment"
         android:label="fragment_anime"
-        tools:layout="@layout/fragment_anime" >
-        <action
-            android:id="@+id/action_animeFragment_to_mangaFragment"
-            app:destination="@id/mangaFragment" />
-        <action
-            android:id="@+id/action_animeFragment_to_favouritesFragment"
-            app:destination="@id/favouritesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_anime" />
     <fragment
-        android:id="@id/mangaFragment"
+        android:id="@+id/mangaFragment"
         android:name="dev.redfox.anisearchclean.presentation.fragments.mangaFragment"
         android:label="fragment_manga"
-        tools:layout="@layout/fragment_manga" >
-        <action
-            android:id="@+id/action_mangaFragment_to_favouritesFragment"
-            app:destination="@id/favouritesFragment" />
-        <action
-            android:id="@+id/action_mangaFragment_to_animeFragment"
-            app:destination="@id/animeFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_manga" />
     <fragment
-        android:id="@id/favouritesFragment"
+        android:id="@+id/favouritesFragment"
         android:name="dev.redfox.anisearchclean.presentation.fragments.favouritesFragment"
         android:label="fragment_favourites"
-        tools:layout="@layout/fragment_favourites" >
-        <action
-            android:id="@+id/action_favouritesFragment_to_animeFragment"
-            app:destination="@id/animeFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_favourites" />
 </navigation>
