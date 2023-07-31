@@ -7,12 +7,14 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 import com.squareup.picasso.Picasso
 import dev.redfox.anisearchclean.R
 import dev.redfox.anisearchclean.data.dataclasses.Animes
 import dev.redfox.anisearchclean.data.utils.Snacker
+import dev.redfox.anisearchclean.data.utils.SwipeGesture
 import dev.redfox.anisearchclean.databinding.WatchListItemBinding
 import dev.redfox.anisearchclean.presentation.viewmodels.AnimesRoomDBViewModel
 
@@ -73,25 +75,9 @@ class AnimeWatchListAdapter(
 
         }
 
-//        holder.binding.btnDelete.setOnClickListener {
-//            AlertDialog.Builder(context)
-//                .setTitle("Delete")
-//                .setMessage("Are you sure you want to delete?")
-//                .setPositiveButton("Yes") { dialog, _ ->
-//                    animesDBViewModel.deleteAnimes(animeItem)
-//                    Snacker(it, "Anime Deleted").success()
-//                }
-//                .setNegativeButton("No") { dialog, _ ->
-//                    Snacker(it, "Anime Not Deleted").warning()
-//                    animesDBViewModel.updateAnimes(animeItem)
-//                }
-//                .setCancelable(false)
-//                .show()
-//
-//
-//        }
-
     }
+
+
 
     override fun getItemCount(): Int {
         return animesWatchList.size

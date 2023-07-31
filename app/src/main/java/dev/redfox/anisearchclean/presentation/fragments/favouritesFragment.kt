@@ -1,6 +1,5 @@
 package dev.redfox.anisearchclean.presentation.fragments
 
-import android.annotation.SuppressLint
 import android.app.Dialog
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -46,22 +45,22 @@ class favouritesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         attachObserver()
     }
 
 
 
-    @SuppressLint("NotifyDataSetChanged")
     fun attachObserver() {
         animesDBViewModel.allAnimesLists.observe(viewLifecycleOwner, Observer{
 
             val watchData: MutableList<Animes> = it
 
-            animeWatchListAdapter.notifyDataSetChanged()
             animeWatchListAdapter = AnimeWatchListAdapter(animesDBViewModel, watchData, requireContext())
             binding.rvWatchList.adapter = animeWatchListAdapter
             binding.rvWatchList.setHasFixedSize(true)
             binding.rvWatchList.layoutManager = LinearLayoutManager(context)
+
             animeWatchListAdapter.notifyDataSetChanged()
         })
 
